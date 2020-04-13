@@ -1,0 +1,52 @@
+html, body {
+    position: relative;
+    margin:0;
+    display:inline-block;   
+    width:100%;
+    padding:0;
+    border:0;
+    content:center;
+    background:white;
+    float:left;
+    
+}
+.colorchange{
+	animation:  colorchangethapa 2s infinite;
+}
+
+.new_body{ 
+    width:initial;
+    display:inline-block; 
+    
+}
+	.header{
+    width:initial;
+    border:0%;
+    width:100%;
+    margin:0;
+    content:center;
+   
+}
+.wrapper{
+
+    border:0%;
+    width:100%;
+    margin:0;
+    content:center;
+   
+}
+@keyframes colorchangethapa{
+	0%{color: red;}
+	25%{color:#bf55ec; ;}
+	50%{ color: white; }
+	100%{ color:#bf55ec;  }
+}
+div.new_body{
+    width:100%;
+    margin:0%;
+    border: 3px solid #73AD21;
+}
+div.wrapper{
+    width:100%;
+    margin:0 auto;
+}

@@ -1,0 +1,36 @@
+.img
+{
+  float: left;
+  padding: 45px;
+}
+.head
+{
+  float: right;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 39px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.logout{
+  font-size: 10px;
+float:right;
+background-color: #009688;
+}
+/*idar changes kia hai */
+.button {
+  /*margin-top: 300px;*/
+  background-color: #009688;
+  border: none;
+  color: white;
+  padding: 30px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 12px;
+}

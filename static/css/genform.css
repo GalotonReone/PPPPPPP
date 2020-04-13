@@ -1,0 +1,17 @@
+body
+{
+   background: #e8f3f8;
+   height:100%;
+   width: 100%;
+   margin:0px;
+}
+.container{
+margin: 40px auto;
+    width:100%;
+    color: E80303;
+    top: 50px;
+}
+.head{
+	background-color: green;
+	color: red;
+}

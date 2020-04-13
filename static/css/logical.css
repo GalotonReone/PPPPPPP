@@ -1,0 +1,94 @@
+
+body
+{
+    background-color: #e8f3f8;
+
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    color: steelblue;
+}
+
+h2
+{
+    text-align: left;
+    font-size: 30px;
+    color: steelblue;
+}
+
+.inner_wrapper
+{
+    margin: 20px auto;
+    width:320px;
+    color: steelblue;
+}
+
+option
+{
+    padding: 20px;
+    font-size: inherit;
+}
+
+option[value="udemy"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+option[value="coursera"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+option[value="nptel"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+option[value="none"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+
+option[value="others"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+
+input
+{
+    padding: 10px;
+    font-size: inherit;
+}
+
+
+input[type="logical"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+}
+.main_wrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+
+
+

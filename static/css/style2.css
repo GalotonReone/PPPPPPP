@@ -1,0 +1,80 @@
+.img
+{
+  float: left;
+  padding: 45px;
+}
+.head
+{
+  float: right;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 40.5px;
+  margin-right: -5px;
+  margin-top: -500px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.info
+{
+  float: right;
+  text-align: center;
+  padding: 5px;
+  width: 500px;
+  height: 200px;
+  text-align: justify;
+  font-size: 26px;
+  margin-right: 170px;
+  margin-top: -300px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:  #009688;;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  #009688;;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label
+{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+board
+{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
