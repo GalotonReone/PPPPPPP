@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quantitative</title>
+</head>
+<body>
+<form action='/quiz1' method='POST'>
+    <ol>
+        {% for i in range(0,15) %}
+            <li>{{q[i]}}?</li>
+            {% for j in o[q[i]] %}
+                <input type='radio' value='{{j}}' name='{{q[i]}}' />{{j}}
+            {% endfor %}
+        {% endfor %}
+    </ol>
+    <input type="submit" value="submit" />
+</form>
+</body>
+</html>

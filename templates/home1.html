@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+	<img src="" width="200" height="500" alt="text">
+
+</head>
+<body>
+	<div class="container">
+	<div class="nav">
+	<h3>{{ name }}</h3>
+	<h5>{{id}}</h5>
+</div>
+<div class="dmce">
+	<h2>Datta Meghe College</h2>
+</div>
+</div>
+	<form action="predict1" method="POST">
+<button type="submit" name="text">RESULT</button><br><br>
+</form>
+<form action="formupd" method="POST">
+	<button type="submit" name="text">FORM UPDATION</button><br><br>
+</form>
+<form action="predict3" method="POST">
+	<button type="submit" name="text">REQUIREMENT</button><br><br>
+</form>
+<form action="profile" method="POST">
+	<button type="submit" name="text">PROFILE</button><br><br>
+</form>
+
+</body>
+</html>

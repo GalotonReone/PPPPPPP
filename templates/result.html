@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>result</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/cal.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<style>
+		.block {
+	display: block;
+	height:100px;
+	width: {{yes}}%;
+	color: #fff;
+	font-size: .75em;
+	float: left;
+	background-color: #0CED04;
+	position: relative;
+
+	opacity: 1;
+	transition: opacity, .3s ease;
+	cursor: pointer;
+}
+.block:nth-of-type(2),
+.legend li:nth-of-type(2):before {
+	background-color: #FC1005;
+	
+}
+	</style>
+</head>
+<body>
+	<figure>
+<form id="do" method="POST" action="predict1" >
+<br>
+<h1>{{algo}}<h1>
+<label for="board">Choose Algorithm</label><br>
+
+    <select id="choose1" name="choose">
+      <option value="nb">Naive Bayes Algorithm</option>
+      <option value="svm">Support Vector Machine</option>
+      <option value="rf">Random Forest Tree</option>
+      <option value="dt">Decision Tree</option>
+      <option value="knn">KNN Algorithm</option>
+      <option value="lr">Logical Regression</option>  
+    </select>
+    <input type="submit">
+</form>
+<h1>{{ msg }}</h1>
+<div>
+
+  
+  <div class="y-axis">
+    <h3>Y-Axis </h3>
+  </div>
+
+  <div>
+
+    <div class="graphic">
+    	<div class="row">
+      <h6>Bar one</h6>
+      <div class="chart">
+        <span class="block" title=" Yes ">
+            <span class="value" style="width:{{yes}}%">{{yes}}%</span>
+        </span>
+        <span class="block" title=" No ">
+            <span class="value" style="width:{{no}}%">{{no}}%</span>
+      </span></div>
+    </div>
+  </div>
+</div>
+  <div class="x-axis">
+    <h3> Prediction ( % ) </h3>
+</div>
+<div>
+    <ul class="legend">
+      <li> Yes </li>
+      <li> No </li>
+    </ul>
+  </div>
+</div>
+<form action="predict4" method="POST">
+			<button type="submit" name="text">Companies</button><br><br>
+</form>
+</figure>
+<script src='https://cdnjs.cloudfare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudfare.com/ajax/libs/jquery-ui/1.12.1/jquery-ui.min.js'></script>
+<script src="{{url_for('static', filename='css/cal.js')}}"></script>
+</body>
+</html>

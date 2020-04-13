@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General Form</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/genform.css') }}">
+
+</head>
+<body>
+	<div class="head">
+		<h4>{{user}}</h4>
+		<hr>
+	</div>
+	<center>
+	<div class="container">
+<form action="marks" method="POST">
+<button type="submit" name="text">Academic MARKS</button><br><br>
+</form>
+<form action="log" method="POST">
+<button type="submit" name="text">Logical Testing</button><br><br>
+</form>
+<form action="quantitative" method="POST">
+<button type="submit" name="text">Quantitaive Testing</button><br><br>
+</form>
+<form action="verbal" method="POST">
+<button type="submit" name="text">Verbal Testing</button><br><br>
+</form>
+<form action="communication" method="POST">
+<button type="submit" name="text">Communication Testing</button><br><br>
+</form>
+<form action="extras" method="POST">
+<button type="submit" name="text">Curicular activity Testing</button><br><br>
+</form>
+</div>
+</center>
+</body>
+</html>

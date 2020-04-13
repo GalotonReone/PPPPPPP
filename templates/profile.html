@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+<title>Student Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+<!link rel="stylesheet" type="text/css" href="stuformstyle.css">  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+          <div class="img">
+          <img src="/static/css/dmcelogo.jpg" width="250px" height="250px" alt="Avatar">
+          </div>
+  </div>  
+</div>
+
+
+<div class="head">
+  <p>DATTA  MEGHE  COLLEGE  OF  ENGINEERING<p>
+</div>
+
+<div class="profile">
+<p>PROFILE</p>
+</div>
+{% for item in data %}
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Student ID : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[17]}}>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Full Name : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder={{item[0]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Email ID : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[1]}}>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">SSC Percentage : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[9]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">HSC Percentage : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[8]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">NO of Certification : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[10]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Verbal : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[11]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Communication : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[12]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Quantitative</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[13]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Logical</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[14]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 1 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[20]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 2 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[21]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 3 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[22]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 4 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[23]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 5 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[24]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 6 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[25]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 7 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[26]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Semester 8 : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[27]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Average CGPA : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[4]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Number of Backlog : </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[7]}}>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Drop </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder={{item[19]}}>
+    </div>
+  </div>
+
+
+  </form>
+</div>
+{% endfor %}
+<div class="footer">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">dmce.ac.in</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ERP Login</title>
+</head>
+<body>
+
+
+<table border="1">
+	<h1>{{name1}} Recommended Students</h1>
+    <h3>Total students {{total}}</h3>
+    <tr>
+        {% for col in column_names %}
+        <th>{{col}}</th>
+        {% endfor %}
+    </tr>
+    {% for row in row_data %}
+    <tr>
+        {% for col, row_ in zip(column_names, row) %}
+        {% if col == link_column %}
+        <td>
+            
+                {{ row_ }}
+        <form action="notify" method="POST">        
+           <input type="submit" value="notify">
+       </form>
+        </td>
+        {% else %}
+        <td>{{row_}}</td>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

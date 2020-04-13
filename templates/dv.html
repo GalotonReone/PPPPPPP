@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Visualisation</title>
+</head>
+<style>
+	#tabl{
+		width: 650px;
+		height: 450px;
+border: 1px solid gray;
+	}
+	.tab1 { 
+            tab-size: 2; 
+            padding-left:68px;
+        } 
+	#demo1{
+		width: 450px;
+		height: 450px;
+	}
+	</style>
+<body>
+	<br>
+	<h2>Data Visualisation</h2>
+	Communication algo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="cnb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="cdt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="csvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="crt" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="ckn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="clr" name="mycheckbox" class="mc"><br>
+	Verbal Algorithm
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="vnb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="vdt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="vsvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="vrt" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="vkn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="vlr" name="mycheckbox" class="mc"><br>
+	Logical Algorithm
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="lnb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="ldt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="lsvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="lrt" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="lkn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="llr" name="mycheckbox" class="mc"><br>
+	Quantitative Algorithm
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="qnb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="qdt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="qsvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="qrt" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="qkn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="qlr" name="mycheckbox" class="mc"><br>
+	Extra Curricular Activites Algorithm
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="enb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="edt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="esvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="ert" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="ekn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="elr" name="mycheckbox" class="mc"><br>
+	Drops Algorithm
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Naive Bayes<input type="radio" value="inb" name="mycheckbox" class="mc">
+	Decision Tree<input type="radio" value="idt" name="mycheckbox" class="mc">
+	SVM<input type="radio" value="isvm" name="mycheckbox" class="mc">
+	Random Forest<input type="radio" value="irt" name="mycheckbox" class="mc">
+	KNN<input type="radio" value="ikn" name="mycheckbox" class="mc">
+	Logistic Regression<input type="radio" value="ilr" name="mycheckbox" class="mc"><br>
+	Algorithm Comparison
+	<input type="radio" value="algo" name="mycheckbox" class="mc"><br>
+	
+
+<!img src="/static/images/graph1.png" width="550px" height="550px" alt="Avatar">
+<!textarea id="demo1"><!/textarea>
+<center>
+<div id="demo">
+	
+</div>
+</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('.mc').on('change',function(){
+	$('#demo').html("<img src='static/images/"+this.value+".png' width='450' height='450' />").animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+});
+</script>
+<br><br>
+<hr>
+<h2>Data Model Evaluation</h2>
+Naive bayes<input type="radio" value="n" name="mycheckbox1" class="mc1"><br>
+Decision Tree<input type="radio" value="d" name="mycheckbox1" class="mc1"><br>
+Logistic Regresion<input type="radio" value="l" name="mycheckbox1" class="mc1"><br>
+K Nearest Algorithm<input type="radio" value="k" name="mycheckbox1" class="mc1"><br>
+Support Vector Machine<input type="radio" value="s" name="mycheckbox1" class="mc1"><br>
+Random Forest Algorithm<input type="radio" value="rf" name="mycheckbox1" class="mc1"><br>
+
+<br>
+<center>
+<div id="demo2">
+	
+
+</div>
+</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+	var f0={{cmdt[0][0]}};
+	var f1={{cmdt[0][1]}};
+	var f2={{cmdt[1][0]}};
+	var f3={{cmdt[1][1]}};
+	var na={{n}};
+	var lo={{l}};
+	var dec={{d}};
+	var sv={{s}};
+	var km={{k}};
+	var rf={{rf}};
+	var rfr={{rfr}};
+	var rfp={{rfp}};
+	var rff={{rff}};
+	var na_re={{nr}};
+	var na_pr={{np}};
+	var na_f1={{nf}}, dec_re={{dr}},dec_pr={{dp}},dec_f1={{df}},lo_re={{lr}},lo_pr={{lp}},lo_f1={{lf}},sv_re={{sr}},sv_pr={{sp}},sv_f1={{sf}},km_re={{kr}},km_pr={{kp}},km_f1={{kf}}; 
+$('.mc1').on('change',function(){
+	var de=this.value;
+	if(de=="n"){
+	$('#demo2').html("Model Performance metrics<br>Naive Bayes <br>Accuracy:"+na+"<br>Recall:"+na_re+"<br>Precision :"+na_pr+"<br>F1-Score:"+na_f1).animate({height:$win.height(),width:$win.width(),borderWidth:2},550);	
+	}
+	else if(de=="l"){
+		$('#demo2').html("Model Performance metrics<br>Logistic Regresion<br> Accuracy:"+lo+"<br>Recall:"+lo_re+"<br>Precision:"+lo_pr+"<br>F1-Score:"+lo_f1).animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+	}
+	else if(de=="d"){
+		$('#demo2').html("Model Performance metrics<br>-----------------------------------<br>Decision Tree<br> Accuracy:"+dec+"<br>Recall:"+dec_re+"<br>Precision:"+dec_pr+"<br>F1-Score:"+dec_f1+"<br>-------------------------------------------<br>Prediction Confusion Matrix:<br>"+"   "+" "+" "+"Predicted:<br>Actual"+" "+" 0"+" "+"[["+f0+" "+f1+"] <br>"+" "+"1"+" "+"["+f2+" "+f3+"]]<br>").animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+	}
+	else if(de=="rf"){
+		$('#demo2').html("Model Performance metrics<br>-----------------<br>Random Forest <br>Accuracy:"+rf+"<br>Recall:"+rfr+"<br>Precision:"+rfp+"<br>F1-Score:"+rff).animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+	}
+	else if(de=="k"){
+		$('#demo2').html("Model Performance metrics<br>K-Means <br>Accuracy:"+km+"<br>Recall:"+km_re+"<br>Precision Score:"+km_pr+"<br>F1-Score:"+km_f1).animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+	}
+	else{
+		$('#demo2').html("Model Performance metrics<br>Svm <br>Accuracy:"+sv+"<br>Recall:"+sv_re+"<br>Precision:"+sv_pr+"<br>F1-Score:"+sv_f1).animate({height:$win.height(),width:$win.width(),borderWidth:2},550);
+	}
+});
+</script>
+</body>
+</html>

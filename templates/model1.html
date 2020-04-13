@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Model Incremental</title>
+</head>
+<style>
+	#form1{
+		width: 100%;
+		height: 280px;
+border: 2px solid gray;
+float: left;
+	}
+	#tabl{
+		margin-top: 20px;
+		overflow: scroll;
+		width: 650px;
+		height: 200px;
+		border: 1px solid gray;
+	}
+	</style>
+<body>
+	<div id="main">
+<br>
+<h2>Model Incremental</h2>
+<center>
+<div id="form1">
+<form action="sendto" method="POST">
+<h2>Fill Up Form</h2>
+	<h4>Recruited status</h4>
+<input type="radio" name="yes" value="Yes">Yes<br>
+<input type="radio" name="yes" value="No">No<br>
+<h4>Select Company placed in</h4>
+<select id="comp" name="comp">
+	<option value="TCS">TCS</option>
+	<option value="LTI">LTI</option>
+	<option value="CMS">CMS</option>
+	<option value="Seclore">Seclore</option>
+	<option value="Ingram">Ingram</option>
+	<option value="Infosys">Infosys</option>
+	<option value="Capgemini">Capgemini</option>
+	<option value="Reliance Jio">Reliance Jio</option>
+	<option value="Rave Technologies">Rave Technologies</option>
+	<option value="Ugam">Ugam</option>
+</select>
+<br><br>
+<input type="submit">
+</center>
+</form>
+<center>
+	<div id="tabl">
+		<form action="refresh" method="POST">
+		<input type="submit" name="submit" value="refresh">
+	</form>
+		<h3>Result</h3><br>{{data}}
+	</div>
+</center>
+</div>
+</div>
+</body>
+</html>

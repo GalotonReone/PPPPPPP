@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logical.css') }}">
+    <!link rel="stylesheet" type="text/css" href="logical.css"--!>
+</head>
+<body>
+  <div class="main_wrapper">
+    <h1>FORM</h1>
+    <div class="inner_wrapper">
+        <h2>CERTIFICATION</h2>
+        <form action="/logical" method="POST">
+        <select id="first" name="f">
+            <option value="udemy">Udemy</option>
+            <option value="coursera">Coursera</option>
+            <option value="nptel">Nptel</option>
+            <option value="others">Others</option>
+            <option selected value="none">None</option>   
+        </select>
+        <p><input type="logical" placeholder="Enter Course name 1 "></p>
+            Select a file: <input type="file" name="myFile1">
+      </br>
+        <select id="second" name="s">
+            <option value="udemy">Udemy</option>
+            <option value="coursera">Coursera</option>
+            <option value="nptel">Nptel</option>
+            <option value="others">Others</option>
+            <option selected value="none">None</option>
+        </select>
+        <p><input type="logical" placeholder="Enter Course name 2 "></p> 
+          Select a file: <input type="file" name="myFile2">
+      </br>
+        <select id="third" name="t">
+            <option value="udemy">Udemy</option>
+            <option value="coursera">Coursera</option>
+            <option value="nptel">Nptel</option>
+            <option value="others">Others</option>
+            <option selected value="none">None</option>
+          </select>
+        <p><input type="logical" placeholder="Enter Course name 3 "></p>
+          Select a file: <input type="file" name="myFile3">
+      </form>
+      <form action="logical1" method="POST">
+          <p><input type="submit" value="Take Quiz" name=""></p>
+      </form>
+      <form action="logical" method="POST">
+         <p><input type="submit"></p>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

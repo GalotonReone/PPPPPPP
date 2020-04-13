@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Vpge.css') }}">
+
+</head>
+<body> 
+   <!link rel="stylesheet" type="text/css" href="QVpge.css">
+<form action="verbal1" method="POST">
+        <div class="inner_wrapper">
+<h1> Verbal Skills</h1>
+<h2><label for="hsc English">HSC English:</label>
+<select name="country" id="hsc English"> 
+            <option value=">80">>80</option> 
+            <option value=">60">>60</option> 
+            <option value=">40">>40</option> 
+            <option value="<=40"><=40</option>
+        </select>
+        <p><br>Any Competitions Participated earlier?</br></p>
+        <select>
+            <option value="Elocution">Elocution Competition</option>
+            <option value="Essay">Essay Writings</option>
+            <option value="Others">Others</option>
+            <option value="No">No</option>
+        </select>
+        <p><input type="text" name=""placeholder="Mention your Achievement's Results"></p>
+
+
+         If Yes,Select a file: <input type="file" name="myFile">
+    <form action="/verbal1" method="post">
+            <p><input type="submit" value="Take quiz"></p></form>
+         <p><input type="submit"></p>
+
+
+</h2>
+     </div>
+ </form>
+    </body>
+    </html>
