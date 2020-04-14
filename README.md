@@ -1,4 +1,4 @@
-<h2><b>Recommendation Students on Better Student Performance in Campus</b></h2>
+<h2><b>Recommendation System for Better Student's Performance in Campus</b></h2>
 
 Data mining algorithm is a boon to the huge meaningless data. Our Institute consist huge amount of data which remains useless if not use properly. Our attempt was to make those huge data producible and helpful for the students only. As placement is one of the major issues now-a-days so it is the requirement for any institute or colleges to focus to their student’s performance regarding to the placement vision to improve placement count as well as students progress.<br/><br/>
 Various institute data which comprises of academic marks, curricular activities which shows their personality, and campus placement requirements like their aptitude knowledge screening can be achieved with the help of data mining algorithms and by processing these huge data.<br/><br/> 
